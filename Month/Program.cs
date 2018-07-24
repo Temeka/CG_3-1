@@ -9,28 +9,23 @@ namespace Month
             //Asking user for the month using the "if/else if/else Descision Statement"
             //The end results should print "December & January"
 
-            Console.Write("Please enter the number of the first OR last month of the year: ");
+            Console.Write("Please enter the number of the first OR last month of the year as MM: ");
             string userValue = Console.ReadLine();
+            string message = "";
 
             if (userValue == "12")
             {
-                string message = "December";
-                Console.WriteLine(message);
-            }
-            
-
-            else if (userValue == "1")
+                 message = "December";
+            }           
+            else if (userValue == "01")
             {
-                string message = "January";
-                Console.WriteLine(message);
+                 message = "January";               
             }
-
             else 
             {
-                string message = "Sorry, that is incorrect. Please try again.";
-                Console.WriteLine(message);
+                 message = "Sorry, that is incorrect. Please try again.";                
             }
-
+            Console.WriteLine(message);
             Console.ReadLine();
             
             
